@@ -1,0 +1,18 @@
+Tuesday(3) === 04/08/2025
+<script> Yesterday(2) onStart START 
+Numerology, Date, Task === NAN
+console.log(2)
+</script>
+
+<script>Today(3) onUpdate UPDATE
+Numerology, Date
+Task = (3)
+onEOD === EOD + Task.onUpdate
+console.log(3)
+</script>
+
+<script>Tomorrow(4) onStop STOP
+Numerology, Date
+Task = (4)
+console.log(4)
+</script>
