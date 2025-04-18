@@ -16,22 +16,40 @@ function getCurrentLocalTime() {
   function checkParadoxFlip() {
     const { hours, minutes, string } = getCurrentLocalTime();
   
-    const isWiseTime = hours === 3 && minutes === 33;
-    const isFoolTime = hours === 14 && minutes === 22;
+    // Symbolic triggers based on time awareness (ET logic assumed)
+    const isWiseTime = hours === 3 && minutes === 33;   // Morning Insight
+    const isFoolTime = hours === 14 && minutes === 22;  // Afternoon Blindspot
   
     if (isWiseTime) {
-      console.log("🧠 Professed as WISE — 3:33 AM trigger activated.");
-      return "Wise";
+      console.log("🧠 Paradox Triggered: WISE (3:33 AM)");
+      return {
+        state: "Wise",
+        time: string,
+        signal: "Professed wisdom",
+        symbol: "🧠",
+      };
     }
   
     if (isFoolTime) {
-      console.log("🤡 Flipped to FOOL — 2:22 PM paradox invoked.");
-      return "Fool";
+      console.log("🤡 Paradox Triggered: FOOL (2:22 PM)");
+      return {
+        state: "Fool",
+        time: string,
+        signal: "Inverted clarity",
+        symbol: "🤡",
+      };
     }
   
-    console.log(`⏳ Checked at ${string} — no paradox state change.`);
-    return "Neutral";
+    // Else: Time is neutral, log as observation
+    console.log(`⏳ No paradox shift @ ${string} — system stable`);
+    return {
+      state: "Neutral",
+      time: string,
+      signal: "Baseline awareness",
+      symbol: "⏳",
+    };
   }
+  
   
   function promptParadoxState() {
     const result = checkParadoxFlip();
@@ -58,5 +76,5 @@ function getCurrentLocalTime() {
   // Run on import
   promptParadoxState();
   
-  export default promptParadoxState;
+  export default promptParadoxState; // Promptidox
   
