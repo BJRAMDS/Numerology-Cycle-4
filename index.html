@@ -1,13 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⚠️ Ultra Ops Terminal - Secret Todo List</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #000;
+      color: #00ff00;
+      padding: 20px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    h1 {
+      text-align: center;
+      color: #ff00ff;
+      text-shadow: 0 0 10px #ff00ff;
+      animation: pulseGlow 1.5s infinite alternate;
+    }
+    @keyframes pulseGlow {
+      from { text-shadow: 0 0 5px #ff00ff; }
+      to { text-shadow: 0 0 20px #ff00ff; }
+    }
+    .todo-list {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #001100;
+      border: 1px solid #00ff00;
+      padding: 20px;
+      box-shadow: 0 0 20px #00ff00;
+    }
+    .todo-item {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-bottom: 1px solid #00ff00;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      cursor: pointer;
+    }
+    .todo-item:hover {
+      background-color: #002200;
+    }
+    .todo-item.clicked {
+      color: #ff00ff;
+      background-color: #222;
+      text-shadow: 0 0 3px #ff00ff;
+      animation: glitch 0.3s ease-in-out alternate 2;
+    }
+    @keyframes glitch {
+      0% { transform: translateX(1px); }
+      50% { transform: translateX(-1px); }
+      100% { transform: translateX(1px); }
+    }
+    .priority-ultra {
+      color: #ff0000;
+      font-weight: bold;
+    }
+    .priority-high {
+      color: #ffff00;
+    }
+    .status {
+      font-style: italic;
+      margin-left: 10px;
+      color: #00ffff;
+    }
+    .classified {
+      color: #ff0000;
+      font-weight: bold;
+      text-transform: uppercase;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+    .warning {
+      text-align: center;
+      color: #ff0000;
+      font-size: 1.2em;
+      margin-top: 20px;
+      text-shadow: 0 0 5px #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚠️ Secret Todo List - Cyber Ops Tracker</h1>
+  <div class="todo-list">
+    <div class="todo-item" onclick="handleClick(this)">
+      <span class="priority-ultra">[ULTRA PRIORITY]</span> Implement Project Firewall: AI-powered scam prediction algorithm
+      <span class="status">In Development</span>
+    </div>
+    <div class="todo-item" onclick="handleClick(this)">
+      <span class="priority-high">[HIGH PRIORITY]</span> Recruit ex-scammer for insider knowledge program
+      <span class="status">Candidate Identified</span>
+    </div>
+    <div class="todo-item" onclick="handleClick(this)">
+      <span class="priority-ultra">[ULTRA PRIORITY]</span> Develop quantum-encrypted hotline for high-profile victims
+      <span class="status">Prototype Testing</span>
+    </div>
+    <div class="todo-item" onclick="handleClick(this)">
+      <span class="priority-high">[HIGH PRIORITY]</span> Infiltrate dark web forums for preemptive scam intel
+      <span class="status">Ongoing</span>
+    </div>
+    <div class="todo-item" onclick="handleClick(this)">
+      <span class="priority-ultra">[ULTRA PRIORITY]</span> Launch Operation Silver Shield: Cyber team for real-time intervention
+      <span class="status">Training Phase</span>
+    </div>
+    <div class="todo-item" onclick="handleClick(this)">
+      <span class="classified">[CLASSIFIED]</span> Collaborate with [REDACTED] agency on international sting operation
+      <span class="status">Awaiting Clearance</span>
+    </div>
+  </div>
+  <p class="warning">
+    WARNING: This page is classified. Unauthorized access is punishable by law. Your IP has been logged.
+  </p>
+  <script type="module" src="/src/main.jsx"></script>
+  <div id="root"></div>
+  <script>
+    function handleClick(item) {
+      item.classList.toggle('clicked');
+    }
+  </script>
+  
+</body>
 </html>
