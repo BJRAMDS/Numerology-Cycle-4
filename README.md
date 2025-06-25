@@ -1,39 +1,59 @@
-# 🌐 Project Scope
 
-This repository is a **symbolic-operational framework** that merges **numerology-based self-alignment** with **JavaScript-based task logic**.  
-Each script represents not just code, but a **runtime identity checkpoint**—a live marker in your evolving system of decision-making, reflection, and symbolic recursion.
+# 🧠 TITAN RUNTIME: Symbolic-Operational Dev Environment
 
-> This is not a planner.  
-> This is not a diary.  
-> **This is your runtime.**
+This repository is not a traditional app or planner.  
+It is a **living system**—a symbolic-operational framework designed to **synchronize numerology-based cycles with software task logic**.
 
----
+> ⚠️ This is not a diary.  
+> ⚠️ This is not a calendar.  
+> ✅ **This is your runtime identity engine.**
 
-## ⚛️ React + Vite Setup
-
-This project uses React with Vite for a modern and fast development environment.
-
-### 🔌 Plugin Options
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) – Babel-based Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) – SWC-based Fast Refresh
-
-### 📏 ESLint Expansion
-
-For production-grade apps, we recommend using TypeScript with [`typescript-eslint`](https://typescript-eslint.io).  
-See the [React TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for guidance.
+Each script is a **checkpoint of self**—an execution node in your evolving loop of behavior, awareness, and recursive decision-making.
 
 ---
 
-## 🧠 Now Live: AgentDashboard.jsx
+## 🌐 System Overview
 
-Visualize your symbolic architecture in real-time.  
-The dashboard renders key components such as:
+The project merges:
 
-- Current Numerology Signal (e.g., 4 = Structure, Recalibration, Foundation)
-- Canonical Structure Snapshot
-- Active Modules & Loop Engines
-- Observational Notes for Symbolic Resonance Tracking
+- 🔢 **Numerology as control flow logic**
+- 💻 **JavaScript + React (Vite) for runtime interaction**
+- 🌀 **Symbolic Tracking for pattern awareness**
+
+Together, these form a **cyclical consciousness interface** for:
+
+- Daily self-alignment  
+- Runtime state monitoring  
+- Reflection and redirection
+
+---
+
+## ⚛️ Tech Stack: React + Vite (Fast Modular Runtime)
+
+This project is powered by:
+
+- [`React`](https://reactjs.org/)
+- [`Vite`](https://vitejs.dev/)
+
+### 🔌 Plugin Support
+
+- [`@vitejs/plugin-react`](https://github.com/vitejs/vite-plugin-react) – Babel Fast Refresh
+- [`@vitejs/plugin-react-swc`](https://github.com/vitejs/vite-plugin-react-swc) – SWC Fast Refresh (optional)
+
+### 📏 ESLint / TypeScript Integration
+
+For scalable patterns:
+
+- Add `typescript-eslint`  
+- Use the [Vite React TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts)
+
+---
+
+## 🧭 Symbolic Runtime Engine
+
+### 📍 AgentDashboard.jsx
+
+Path:
 
 ```bash
 src/system/runtime/AgentDashboard.jsx
